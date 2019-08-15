@@ -1,23 +1,32 @@
 // Navigation Styles here
 
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px dashed #C0C0C0;
-    padding: 1% 0;
-    width: 900px;
-
-    .links {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-    }
-
-
-.navbar-wrapper {
+.navbar-wrapper{
     display: flex;
     justify-content: center;
+    width: 100%;
+    border-bottom: 2px dashed #C0C0C0;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        width: 800px;
+
+        .links {
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
 }
+
+
