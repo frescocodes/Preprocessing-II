@@ -261,3 +261,17 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination button {
+  background-color: #247d79;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  border: 1px solid #247d79;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  padding: 11px 50px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #000;
+}
