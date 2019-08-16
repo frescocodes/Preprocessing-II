@@ -3,6 +3,38 @@
   header {
     border-bottom: 2px dashed @navigation-border;
 
+    .animated {
+      .myAnim(@dur: 1s; @name: slideIn; @iteration: 1; @dir: normal;){
+        animation-duration: @dur;
+        animation-name: @name;
+        animation-iteration-count: @iteration;
+        animation-direction: @dir;
+        animation-fill-mode: both;  
+        
+          .slideIn {
+            animation-name: slideIn;
+          }
+
+          @keyframes slideIn {
+            0% {
+              transform: translateY(300);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          } // keyframes end
+
+
+      } // myAnim end
+
+     
+
+    } //animated end 
+
+    
+
     .header-text {
       margin: 2% auto;
 
