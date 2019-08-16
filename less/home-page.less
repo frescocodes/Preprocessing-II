@@ -5,7 +5,14 @@
 
     .header-text {
       margin: 2% auto;
+
+      @media @mobile {
+        margin: 4% auto;
+      }
+
     }
+
+
   }
 
   .content-section {
@@ -14,39 +21,82 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+
+    @media @mobile {
+      flex-wrap: nowrap;
+      flex-direction: column;
+
+    } // end media query
+
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+
+      @media @mobile {
+        padding: 0;
+        width: 100%;
+
+      } // end media query
+    } // end text content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      } // end media query
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @mobile {
+          width: 450px;
+        } // end media query
+      } // end img
+    } // end img content 
+  } // end content 
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    } // end media query
+
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+      @media @mobile {
+        padding: 0;
+      } // end media query
+
+    } // end text content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+
+      @media @mobile {
+        padding: 0;
+      } // end media query
+
+    } // end img content
+
+  } // end inverse content 
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+
+    } // end media query
 
     img {
       border-radius: 10px;
@@ -59,12 +109,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 80%;
+      }
+
       button {
-        .myBtn(@padding: 11px 50px; @rad: 14px; @border: 1px solid #247d79; @f-size: 18px; @f-fam: "Arial", sans-serif; @f-color: #fff; @bg-color: #247d79;);
+        .myBtn(@padding: 11px 50px; @rad: 14px; @f-size: 18px; @f-fam: "Arial", sans-serif; @f-color: #fff; @bg-color: #247d79;);
+
+        @media @mobile {
+          .myBtn(@padding: 11px 129px; @rad: 14px; @f-size: 18px; @f-fam: "Arial", sans-serif; @f-color: #fff; @bg-color: @eastern-blue;);
+        }
       }
       
     } // end destination
