@@ -1,1 +1,64 @@
 // Navigation Styles here
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px dashed #C0C0C0;
+
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        width: 800px;
+
+        @media @phablet {
+            flex-direction: column;
+            padding: 15px 0 10px 0;
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            padding: 15px 0 10px 0;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+
+        .links {
+            width: 45%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            @media @phablet {
+                width: 100%;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-top: 15px;
+            }
+
+            @media @mobile {
+                width: 100%;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-top: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: 1.6rem;
+
+            }
+        }
+    }
+
+
+}
+
+

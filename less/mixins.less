@@ -1,1 +1,28 @@
 // Mixins in here
+
+
+// custom button 
+.myBtn(@padding; @rad; @f-size; @f-fam; @f-color; @bg-color) {
+    background-color: @bg-color;
+    -webkit-border-radius: @rad;
+    -moz-border-radius: @rad;
+    border-radius: @rad;
+    cursor: pointer;
+    color: @f-color;
+    font-size: @f-size;
+    font-family: @f-fam;
+    padding: @padding;
+    text-decoration: none;
+    // text-shadow: 0px 1px 0px #000;
+    text-align: center;
+}
+
+// custom animation
+
+.myAnim(@dur; @name; @iteration; @dir;){
+    animation-duration: @dur;
+    animation-name: @name;
+    animation-iteration-count: @iteration;
+    animation-direction: @dir;
+}
+
